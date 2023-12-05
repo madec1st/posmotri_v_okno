@@ -263,8 +263,8 @@ input {
   position: relative;
 }
 
-.content__list-item {
-  padding: 2px;
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__list-item:not(:last-child) {
@@ -279,25 +279,26 @@ input {
   text-decoration: underline;
 }
 
-.content__list-item:focus {
+.content__video-card:focus {
   outline: none;
 }
 
-.content__list-item:focus-visible {
+.content__video-card:focus-visible {
   outline: 1px solid #FFF;
-  outline-offset: 3px;
+  outline-offset: 1px;
 }
 
 .content__card-link {
   text-decoration: none;
   color: #FFF;
+  margin: 2px;
+  display: block;
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-items: start;
-  padding: 2px;
 }
 
 .content__video-card-description-container {
