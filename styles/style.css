@@ -271,27 +271,6 @@ input {
   margin-bottom: 30px;
 }
 
-.content__video-card {
-  padding: 2px;
-}
-
-.content__video-card:active {
-  background-color: #545050;
-}
-
-.content__video-card:hover {
-  text-decoration: underline;
-}
-
-.content__video-card:focus {
-  outline: none;
-}
-
-.content__video-card:focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-}
-
 .content__card-link {
   text-decoration: none;
   color: #FFF;
@@ -299,7 +278,25 @@ input {
   display: block;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
 .content__video-card {
+  padding: 2px;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -327,6 +324,8 @@ input {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center; 
 }
 
 .more-button {
